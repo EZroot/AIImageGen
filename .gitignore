@@ -1,0 +1,19 @@
+## User-specific files ##
+.vscode/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+
+sd-env/
+models--sd-legacy--stable-diffusion-v1-5/
+models/
+diffuserextractor/
+generated_images/
+
