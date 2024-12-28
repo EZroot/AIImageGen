@@ -1,0 +1,15 @@
+2024-12-27 20:27:07,998 INFO Loading the model...
+2024-12-27 20:27:10,916 INFO Model loaded successfully on cuda.
+2024-12-27 20:27:10,922 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.5:5000
+2024-12-27 20:27:10,922 INFO [33mPress CTRL+C to quit[0m
+2024-12-27 20:29:21,077 INFO Generating image with prompt: a majestic sunset over a snowy mountain range
+2024-12-27 20:30:01,754 INFO Image saved at: generated_images/ed8e0a7c56e544fd9a5dd06f2fafea3f.png
+2024-12-27 20:30:01,755 INFO 127.0.0.1 - - [27/Dec/2024 20:30:01] "POST /generate HTTP/1.1" 200 -
+2024-12-27 20:30:21,497 INFO 127.0.0.1 - - [27/Dec/2024 20:30:21] "GET /images/ed8e0a7c56e544fd9a5dd06f2fafea3f.png HTTP/1.1" 200 -
+2024-12-27 20:30:22,289 INFO 127.0.0.1 - - [27/Dec/2024 20:30:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-27 20:31:18,699 INFO Generating image with prompt: a giant angry dragon
+2024-12-27 20:31:55,945 INFO Image saved at: generated_images/9fdaf9402edd4f238f36ffb3055229e6.png
+2024-12-27 20:31:55,946 INFO 127.0.0.1 - - [27/Dec/2024 20:31:55] "POST /generate HTTP/1.1" 200 -
