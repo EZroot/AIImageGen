@@ -1,18 +1,27 @@
 using System.Diagnostics;
+using DiscordMusicBot.Models;
 
 namespace DiscordMusicBot.Utils
 {
     public static class Debug
     {
+        private static bool _isDebugMode = false;
+        public static void Initialize(BotData data)
+        {
+            _isDebugMode = data.DebugMode;
+        }
+
         public static void Log(string input)
         {
-            string timeStamp = DateTime.Now.ToString("hh:mm:ss tt");
-
-            StackTrace stackTrace = new StackTrace();
-            StackFrame frame = stackTrace.GetFrame(1); 
-            var method = frame.GetMethod();
-            string callerClassName = method.ReflectedType.Name; 
-            string callerMethodName = method.Name;
+            var timeStamp = DateTime.Now.ToString("hh:mm:ss tt");
+            var callerClassName = "";
+            if(_isDebugMode) 
+            {
+                StackTrace stackTrace = new StackTrace();
+                StackFrame frame = stackTrace.GetFrame(1); 
+                var method = frame.GetMethod();
+                callerClassName = method.ReflectedType.Name; 
+            }
 
             input = $"<color=magenta>{timeStamp}</color> <color=yellow>[{callerClassName}]</color> " + input;
 

@@ -7,9 +7,9 @@ using System.Diagnostics;
 
 namespace DiscordMusicBot.Commands.Commands
 {
-    internal class CommandGenerate : IDiscordCommand
+    internal class CommandLandscape : IDiscordCommand
     {
-        private string _commandName = "generate";
+        private string _commandName = "landscape";
         public string CommandName => _commandName;
 
         public SlashCommandBuilder Register()
@@ -17,19 +17,19 @@ namespace DiscordMusicBot.Commands.Commands
             return new SlashCommandBuilder()
             .WithName(_commandName)
             .AddOption("prompt", ApplicationCommandOptionType.String, "Prompt used to generate the image.", isRequired: true)
-            .WithDescription("Generate a image with the given prompt");
+            .WithDescription("Generate a landscape with the given prompt");
         }
 
         public async Task ExecuteAsync(SocketSlashCommand command)
         {
             var prompt = command.Data.Options.First();
             await command.DeferAsync();
-            var response = await Service.Get<IServiceRequestManager>().SendRequestAsync((string)prompt, 1024, 1024, 30, "highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, ");
+            var response = await Service.Get<IServiceRequestManager>().SendRequestAsync((string)prompt, 1024, 768, 50, "highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, ");
             if(response[0] == '/' || response[0] == 'c' || response[0] == 'C')
                 await command.FollowupWithFileAsync(response);
             else
                 await command.FollowupAsync($"Error: {response}");
         }
-
+        
     }
 }

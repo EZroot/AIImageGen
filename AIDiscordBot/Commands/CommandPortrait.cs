@@ -3,13 +3,12 @@ using DiscordMusicBot.Commands.Interfaces;
 using Discord;
 using DiscordMusicBot.Services.Interfaces;
 using DiscordMusicBot.Services;
-using System.Diagnostics;
 
 namespace DiscordMusicBot.Commands.Commands
 {
-    internal class CommandGenerate : IDiscordCommand
+    internal class CommandPortrait : IDiscordCommand
     {
-        private string _commandName = "generate";
+        private string _commandName = "portrait";
         public string CommandName => _commandName;
 
         public SlashCommandBuilder Register()
@@ -17,14 +16,14 @@ namespace DiscordMusicBot.Commands.Commands
             return new SlashCommandBuilder()
             .WithName(_commandName)
             .AddOption("prompt", ApplicationCommandOptionType.String, "Prompt used to generate the image.", isRequired: true)
-            .WithDescription("Generate a image with the given prompt");
+            .WithDescription("Generate a portrait with the given prompt");
         }
 
         public async Task ExecuteAsync(SocketSlashCommand command)
         {
             var prompt = command.Data.Options.First();
             await command.DeferAsync();
-            var response = await Service.Get<IServiceRequestManager>().SendRequestAsync((string)prompt, 1024, 1024, 30, "highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, ");
+            var response = await Service.Get<IServiceRequestManager>().SendRequestAsync((string)prompt, 768, 1024);
             if(response[0] == '/' || response[0] == 'c' || response[0] == 'C')
                 await command.FollowupWithFileAsync(response);
             else

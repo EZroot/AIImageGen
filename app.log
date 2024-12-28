@@ -13,3 +13,104 @@
 2024-12-27 20:31:18,699 INFO Generating image with prompt: a giant angry dragon
 2024-12-27 20:31:55,945 INFO Image saved at: generated_images/9fdaf9402edd4f238f36ffb3055229e6.png
 2024-12-27 20:31:55,946 INFO 127.0.0.1 - - [27/Dec/2024 20:31:55] "POST /generate HTTP/1.1" 200 -
+2024-12-28 05:53:41,736 INFO Loading the model...
+2024-12-28 05:54:45,385 INFO Model loaded successfully on cuda.
+2024-12-28 05:54:45,435 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-28 05:54:45,435 INFO [33mPress CTRL+C to quit[0m
+2024-12-28 05:56:49,759 INFO Generating image with prompt: giant bug
+2024-12-28 05:57:11,938 INFO Image saved at: generated_images/5bfbd0336848467eb3e2f44a85721337.png
+2024-12-28 05:57:11,958 INFO 127.0.0.1 - - [28/Dec/2024 05:57:11] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:00:46,930 INFO Generating image with prompt: a giant tree
+2024-12-28 06:01:04,088 INFO Image saved at: generated_images/2aa809d0ed3f4675ba1f9b7286e9c941.png
+2024-12-28 06:01:04,089 INFO 127.0.0.1 - - [28/Dec/2024 06:01:04] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:03:08,890 INFO Generating image with prompt: a tree
+2024-12-28 06:03:25,948 INFO Image saved at: generated_images/702ec6f50c734e9da54b16fa0fcdf018.png
+2024-12-28 06:03:25,949 INFO 127.0.0.1 - - [28/Dec/2024 06:03:25] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:04:33,681 INFO Generating image with prompt: trees
+2024-12-28 06:04:50,960 INFO Image saved at: generated_images/0929a7a0128f4049a429b9edabbd085a.png
+2024-12-28 06:04:50,960 INFO 127.0.0.1 - - [28/Dec/2024 06:04:50] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:05:20,805 INFO Generating image with prompt: trees
+2024-12-28 06:05:39,203 INFO Image saved at: generated_images/5c79db29d6814840a016e2e7102fb52b.png
+2024-12-28 06:05:39,204 INFO 127.0.0.1 - - [28/Dec/2024 06:05:39] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:07:29,414 INFO Generating image with prompt: a tree
+2024-12-28 06:07:47,102 INFO Image saved at: generated_images/997d9818aaa54fe18f5ef5e7ac614fcc.png
+2024-12-28 06:07:47,103 INFO 127.0.0.1 - - [28/Dec/2024 06:07:47] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:09:30,337 INFO Generating image with prompt: a tree
+2024-12-28 06:09:48,668 INFO Image saved at: generated_images/556caee04a5c4c3c94b319102b055fca.png
+2024-12-28 06:09:48,668 INFO 127.0.0.1 - - [28/Dec/2024 06:09:48] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:11:11,603 INFO Generating image with prompt: a tree
+2024-12-28 06:11:29,848 INFO Image saved at: generated_images/4c8ff6f95d7f4676b8837f9e3f88cfcb.png
+2024-12-28 06:11:29,849 INFO 127.0.0.1 - - [28/Dec/2024 06:11:29] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:15:23,522 INFO Generating image with prompt: a tree frog eating a tree
+2024-12-28 06:15:41,582 INFO Image saved at: generated_images/45da645c995f4499b39a63fe3b5e6063.png
+2024-12-28 06:15:41,583 INFO 127.0.0.1 - - [28/Dec/2024 06:15:41] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:19:09,127 INFO Loading the model...
+2024-12-28 06:19:17,460 INFO Model loaded successfully on cuda.
+2024-12-28 06:19:17,466 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-28 06:19:17,466 INFO [33mPress CTRL+C to quit[0m
+2024-12-28 06:20:55,192 INFO Generating image with prompt: a tree
+2024-12-28 06:21:14,409 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/c980bd2a00934527bd208eb8653d7d51.png
+2024-12-28 06:21:14,410 INFO 127.0.0.1 - - [28/Dec/2024 06:21:14] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:21:28,752 INFO Generating image with prompt: a black hole, cinematic, masterwork
+2024-12-28 06:21:47,266 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3eed4e3b581d42669ab26234a1e9c2d8.png
+2024-12-28 06:21:47,266 INFO 127.0.0.1 - - [28/Dec/2024 06:21:47] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:21:55,990 INFO Generating image with prompt: some planets
+2024-12-28 06:22:14,271 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/0fd08239a18e4c32ba4f80e699a9a5ad.png
+2024-12-28 06:22:14,271 INFO Generating image with prompt: a giant squirrel
+2024-12-28 06:22:14,273 INFO 127.0.0.1 - - [28/Dec/2024 06:22:14] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:22:32,486 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/c459871336a54506abb8444c833fbfa8.png
+2024-12-28 06:22:32,487 INFO 127.0.0.1 - - [28/Dec/2024 06:22:32] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:26:21,160 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a giant bunny
+2024-12-28 06:27:04,073 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/d510812c275c4f75b581afbee62c680a.png
+2024-12-28 06:27:04,074 INFO 127.0.0.1 - - [28/Dec/2024 06:27:04] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:27:50,815 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, the apocalypse with zombies and ruins. darkshot
+2024-12-28 06:28:33,818 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b188490379ee4fc59bcecf845bc95f23.png
+2024-12-28 06:28:33,819 INFO 127.0.0.1 - - [28/Dec/2024 06:28:33] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:43:13,739 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, beautiful scenery with glowing fauna and flora
+2024-12-28 06:44:23,205 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/0d0e840db59c4f6394db5317979fa883.png
+2024-12-28 06:44:23,206 INFO 127.0.0.1 - - [28/Dec/2024 06:44:23] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:44:56,370 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a sexy undead goth lady
+2024-12-28 06:46:05,772 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3ce0a4acee7c47f58c6cd6673528bcb8.png
+2024-12-28 06:46:05,773 INFO 127.0.0.1 - - [28/Dec/2024 06:46:05] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:46:32,284 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a spaceship in orbit surrounded by aliens
+2024-12-28 06:47:27,547 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/f326b50319f14cafa79c0430dc6de5be.png
+2024-12-28 06:47:27,548 INFO 127.0.0.1 - - [28/Dec/2024 06:47:27] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:50:41,275 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, space aliens
+2024-12-28 06:51:36,187 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/de7136bc84c845c09118b23bc4933cd2.png
+2024-12-28 06:51:36,188 INFO 127.0.0.1 - - [28/Dec/2024 06:51:36] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:52:02,237 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, space aliens invading earth, apocalyptic
+2024-12-28 06:52:57,292 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/87ba75c402c6401e8d594fbe9e445198.png
+2024-12-28 06:52:57,293 INFO 127.0.0.1 - - [28/Dec/2024 06:52:57] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:53:48,171 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a female with big tits
+2024-12-28 06:54:57,424 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/7919ff1af01343bba0e6d221923c2d79.png
+2024-12-28 06:54:57,424 INFO 127.0.0.1 - - [28/Dec/2024 06:54:57] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:55:33,274 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, a snow covered mountain at night with pyramids surrounding it
+2024-12-28 06:56:42,656 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/87ececfb3c9448b39b76834f3fc5acaa.png
+2024-12-28 06:56:42,657 INFO 127.0.0.1 - - [28/Dec/2024 06:56:42] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:57:24,798 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a snow covered mountain at night with pyramids surrounding it
+2024-12-28 06:58:20,238 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/ebf9f48f93744a1784b4cf640c688353.png
+2024-12-28 06:58:20,238 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a snow covered mountain at night with pyramids surrounding it
+2024-12-28 06:58:20,240 INFO 127.0.0.1 - - [28/Dec/2024 06:58:20] "POST /generate HTTP/1.1" 200 -
+2024-12-28 06:59:29,627 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/2583899a1f1a4bf6b9cdacce0b74a0b8.png
+2024-12-28 06:59:29,628 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, night time, dark shot, a horrifying sea creature in deep water with neon flora surrounding it
+2024-12-28 06:59:29,628 INFO 127.0.0.1 - - [28/Dec/2024 06:59:29] "POST /generate HTTP/1.1" 200 -
+2024-12-28 07:00:38,649 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b33f130f841e41cfb7c10f6fb7d544fd.png
+2024-12-28 07:00:38,650 INFO 127.0.0.1 - - [28/Dec/2024 07:00:38] "POST /generate HTTP/1.1" 200 -
+2024-12-28 07:04:20,947 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, horrifying creature at night
+2024-12-28 07:05:23,498 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/436e74d71ff740788feff408fd65ac61.png
+2024-12-28 07:05:23,498 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a dog petting a cat
+2024-12-28 07:05:23,499 INFO 127.0.0.1 - - [28/Dec/2024 07:05:23] "POST /generate HTTP/1.1" 200 -
+2024-12-28 07:06:25,613 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/825089987359434b8dd7ca115cd962d9.png
+2024-12-28 07:06:25,614 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a man holding up his hand
+2024-12-28 07:06:25,614 INFO 127.0.0.1 - - [28/Dec/2024 07:06:25] "POST /generate HTTP/1.1" 200 -
+2024-12-28 07:07:27,295 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/30efe30fe16a425d975832cb1231d3d1.png
+2024-12-28 07:07:27,296 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, a blimp flying over a massive city
+2024-12-28 07:07:27,296 INFO 127.0.0.1 - - [28/Dec/2024 07:07:27] "POST /generate HTTP/1.1" 200 -
+2024-12-28 07:08:36,901 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/575493a8a4e94052945c2c64c6e47cdd.png
+2024-12-28 07:08:36,902 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a catdog
+2024-12-28 07:08:36,902 INFO 127.0.0.1 - - [28/Dec/2024 07:08:36] "POST /generate HTTP/1.1" 200 -
+2024-12-28 07:09:37,599 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/1ad22c0daa5c4916b06cde582bb7cfc3.png
+2024-12-28 07:09:37,600 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, test
+2024-12-28 07:09:37,600 INFO 127.0.0.1 - - [28/Dec/2024 07:09:37] "POST /generate HTTP/1.1" 200 -

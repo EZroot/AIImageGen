@@ -20,20 +20,29 @@ namespace DiscordMusicBot.Services.Services
 
             _client.Log += Ev_Log;
             _client.Ready += Ev_ClientReady;
+            _client.Disconnected += Ev_OnDisconnect;
             // _client.ReactionAdded += Ev_ReactionAddedAsync;
 
             await Service.Get<IServiceAnalyticsManager>().Initialize();
+            await Service.Get<IServiceRequestManager>().Initialize();
+
             var botData = Service.Get<IServiceDataManager>().LoadConfig();
+            Debug.Initialize(botData);
 
             SubscribeToEvents(botData);
-
+            
             await _client.LoginAsync(TokenType.Bot, botData.ApiKey);
             await _client.StartAsync();
             await _client.SetCustomStatusAsync(GetRandomMotto(botData));
             // Block this task
             await Task.Delay(-1);
         }
-         
+
+        private async Task Ev_OnDisconnect(Exception exception)
+        {
+            UnsubscribeToEvents();
+        }
+
         private async Task Ev_ClientReady()
         {
             // Ensure you have the correct guild ID (Replace it with your server id)

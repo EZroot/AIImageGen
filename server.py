@@ -27,11 +27,10 @@ logging.basicConfig(
 app = Flask(__name__)
 
 # Configuration Settings
-# Set SERVER_NAME to 'localhost:5000' for local development.
-# Replace 'localhost:5000' with your domain or IP and port when deploying.
-app.config['SERVER_NAME'] = 'localhost:5000'
+app_root = os.path.dirname(os.path.abspath(__file__))
+app.config['SERVER_NAME'] = 'localhost:5000'  # For local development
 app.config['PREFERRED_URL_SCHEME'] = 'http'
-app.config['IMAGE_SAVE_DIRECTORY'] = 'generated_images'
+app.config['IMAGE_SAVE_DIRECTORY'] = os.path.join(app_root, 'generated_images')
 os.makedirs(app.config['IMAGE_SAVE_DIRECTORY'], exist_ok=True)
 
 # Specify the model path
@@ -102,14 +101,18 @@ def worker():
 
             logging.info(f"Image saved at: {file_path}")
 
+            # Get absolute file path
+            absolute_file_path = os.path.abspath(file_path)
+
             # Generate the URL for the saved image within an application context
             with app.app_context():
                 image_url = url_for('get_image', filename=unique_filename, _external=True)
 
-            # Store the result
+            # Store the result with both image_url and file_path
             job.result = {
                 "message": "Success",
                 "image_url": image_url,
+                "file_path": absolute_file_path,
                 "prompt": job.prompt,
                 "negative_prompt": job.negative_prompt
             }
@@ -187,9 +190,15 @@ def generate_image():
     if "error" in job.result:
         return jsonify({"error": job.result["error"]}), 500
 
-    # Respond with JSON containing the image URL
-    return jsonify(job.result), 200
+    # Respond with JSON containing the image URL and file path
+    return jsonify({
+        "message": job.result["message"],
+        "image_url": job.result["image_url"],
+        "file_path": job.result["file_path"],
+        "prompt": job.result["prompt"],
+        "negative_prompt": job.result["negative_prompt"]
+    }), 200
 
 if __name__ == '__main__':
     # Run on port 5000 by default, or specify another port if needed
-    app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False)
+    app.run(host='127.0.0.1', port=5000, debug=True, use_reloader=False)
