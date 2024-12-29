@@ -22,3 +22,6 @@ torch
 diffusers
 transformers
 huggingface_hub
+
+
+Run the AIDiscordBot using dotnet and fill out the config.json file it generates on first run to have a interface from discord to your image generation python server
