@@ -114,3 +114,280 @@
 2024-12-28 07:09:37,599 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/1ad22c0daa5c4916b06cde582bb7cfc3.png
 2024-12-28 07:09:37,600 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, test
 2024-12-28 07:09:37,600 INFO 127.0.0.1 - - [28/Dec/2024 07:09:37] "POST /generate HTTP/1.1" 200 -
+2024-12-28 17:17:22,957 INFO Loading the model...
+2024-12-28 17:18:21,519 INFO Model loaded successfully on cuda.
+2024-12-28 17:18:21,602 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-28 17:18:21,602 INFO [33mPress CTRL+C to quit[0m
+2024-12-28 17:20:46,267 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a gay mexican
+2024-12-28 17:21:58,783 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/134d84b1a75a4a949d8bbab3be9d006c.png
+2024-12-28 17:21:58,784 INFO 127.0.0.1 - - [28/Dec/2024 17:21:58] "POST /generate HTTP/1.1" 200 -
+2024-12-28 17:22:41,874 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a black fur lion rogue weilding a dagger
+2024-12-28 17:23:54,018 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/282e08ca57834b0c9701740bcb3ea377.png
+2024-12-28 17:23:54,019 INFO 127.0.0.1 - - [28/Dec/2024 17:23:54] "POST /generate HTTP/1.1" 200 -
+2024-12-28 17:32:36,856 ERROR Error: The path ./models/sd/segmindSSD1B_v10.safetensors does not exist.
+2024-12-28 17:33:07,726 INFO Loading the model...
+2024-12-28 17:33:56,382 INFO Loading the model...
+2024-12-28 17:41:43,675 INFO Loading the model...
+2024-12-28 17:44:46,093 INFO Loading the model...
+2024-12-28 17:46:20,444 INFO Loading the model...
+2024-12-28 17:46:45,566 INFO Loading the model...
+2024-12-28 17:49:38,899 INFO Loading the model...
+2024-12-28 17:51:23,764 INFO Loading the model...
+2024-12-28 17:52:39,859 INFO Model loaded successfully on cuda.
+2024-12-28 17:52:40,128 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-28 17:52:40,128 INFO [33mPress CTRL+C to quit[0m
+2024-12-28 17:53:31,335 INFO Loading the model...
+2024-12-28 22:00:45,047 INFO Loading the model...
+2024-12-28 22:09:23,636 INFO Loading the model...
+2024-12-28 22:19:55,138 INFO Loading the model...
+2024-12-28 22:21:19,697 INFO Xformers memory-efficient attention enabled.
+2024-12-28 22:21:19,711 INFO Model loaded successfully on cuda.
+2024-12-28 22:21:19,845 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-28 22:21:19,846 INFO [33mPress CTRL+C to quit[0m
+2024-12-28 22:21:31,046 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a dog man
+2024-12-28 22:22:36,332 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/84d66353c6f1468d86778f3d5e22b975.png
+2024-12-28 22:22:36,332 INFO 127.0.0.1 - - [28/Dec/2024 22:22:36] "POST /generate HTTP/1.1" 200 -
+2024-12-28 22:23:00,485 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, an automaton robot with an intimidating stance
+2024-12-28 22:23:57,309 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/113f777485094d7983f932040ae7262b.png
+2024-12-28 22:23:57,310 INFO 127.0.0.1 - - [28/Dec/2024 22:23:57] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:18:17,492 INFO Loading the model...
+2024-12-29 02:20:42,909 INFO Loading the model...
+2024-12-29 02:20:47,257 INFO Xformers memory-efficient attention enabled.
+2024-12-29 02:20:47,257 INFO Model loaded successfully on cuda.
+2024-12-29 02:20:47,298 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 02:20:47,298 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 02:25:11,837 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a barbarian raging against the undead
+2024-12-29 02:25:15,196 ERROR Error generating image: argument of type 'NoneType' is not iterable
+2024-12-29 02:25:15,210 INFO 127.0.0.1 - - [29/Dec/2024 02:25:15] "[35m[1mPOST /generate HTTP/1.1[0m" 500 -
+2024-12-29 02:32:29,010 INFO Loading the model...
+2024-12-29 02:34:07,748 INFO Xformers memory-efficient attention enabled.
+2024-12-29 02:34:07,967 INFO Model loaded successfully on cuda.
+2024-12-29 02:34:11,151 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 02:34:11,152 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 02:37:11,591 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a raging barbarian
+2024-12-29 02:39:15,543 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b572ebba4de84cd5b6922fcb3e525b95.png
+2024-12-29 02:39:15,543 INFO 127.0.0.1 - - [29/Dec/2024 02:39:15] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:39:35,042 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a beautiful planet
+2024-12-29 02:40:28,625 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/83336ea6413a44d0a97ef34010b036b6.png
+2024-12-29 02:40:28,626 INFO 127.0.0.1 - - [29/Dec/2024 02:40:28] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:41:35,222 INFO Loading the model...
+2024-12-29 02:42:35,972 INFO Xformers memory-efficient attention enabled.
+2024-12-29 02:42:35,972 INFO Model loaded successfully on cuda.
+2024-12-29 02:42:35,978 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 02:42:35,978 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 02:43:00,245 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a planet in space
+2024-12-29 02:43:39,612 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/9018d6e872684823bead56a5615d7ae9.png
+2024-12-29 02:43:39,613 INFO 127.0.0.1 - - [29/Dec/2024 02:43:39] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:48:41,541 INFO Loading the model...
+2024-12-29 02:50:11,683 INFO Xformers memory-efficient attention enabled.
+2024-12-29 02:50:11,800 INFO Model loaded successfully on cuda.
+2024-12-29 02:50:12,299 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 02:50:12,299 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 02:50:27,436 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a raging barbarian
+2024-12-29 02:51:52,502 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b1ca814f69404d598e0c4d598942f8c6.png
+2024-12-29 02:51:52,525 INFO 127.0.0.1 - - [29/Dec/2024 02:51:52] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:52:47,944 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, a gorgeous alien world filled with lush fauna and flora glowing neon colors against the black night sky
+2024-12-29 02:54:06,066 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/865ccee08c58422e915cc7504a4bfc83.png
+2024-12-29 02:54:06,067 INFO 127.0.0.1 - - [29/Dec/2024 02:54:06] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:54:40,890 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a man smoking a crack pipe in New York city
+2024-12-29 02:55:35,249 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/6feb6ea7e85b4b53ae553554702d1815.png
+2024-12-29 02:55:35,250 INFO 127.0.0.1 - - [29/Dec/2024 02:55:35] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:56:18,640 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a man smoking a crack pipe in a well lit room. His face is sunken from years of drug addiction.
+2024-12-29 02:57:36,369 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/51f663878016444f8b96d81b7d43f5e9.png
+2024-12-29 02:57:36,369 INFO 127.0.0.1 - - [29/Dec/2024 02:57:36] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:58:21,344 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, a bright snowy mountain with a horrifying titan climbing up the side. Day time.
+2024-12-29 02:59:39,263 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/04e195b3cfab42f9bc26a42f48f56d93.png
+2024-12-29 02:59:39,264 INFO 127.0.0.1 - - [29/Dec/2024 02:59:39] "POST /generate HTTP/1.1" 200 -
+2024-12-29 02:59:56,248 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a horrifying creature
+2024-12-29 03:01:14,313 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/fb9b8efba3a54835830a1ea6c2bcc385.png
+2024-12-29 03:01:14,314 INFO 127.0.0.1 - - [29/Dec/2024 03:01:14] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:04:30,173 INFO Loading the model...
+2024-12-29 03:37:39,371 INFO Loading the model...
+2024-12-29 03:37:51,475 INFO Xformers memory-efficient attention enabled.
+2024-12-29 03:37:51,475 INFO Model loaded successfully on cuda.
+2024-12-29 03:37:51,481 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 03:37:51,481 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 03:38:36,987 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a beautiful cat lady, highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, 
+2024-12-29 03:38:40,799 ERROR Error generating image: argument of type 'NoneType' is not iterable
+2024-12-29 03:38:40,801 INFO 127.0.0.1 - - [29/Dec/2024 03:38:40] "[35m[1mPOST /generate HTTP/1.1[0m" 500 -
+2024-12-29 03:39:08,902 INFO Loading the model...
+2024-12-29 03:39:15,632 INFO Xformers memory-efficient attention enabled.
+2024-12-29 03:39:15,632 INFO Model loaded successfully on cuda.
+2024-12-29 03:39:15,638 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 03:39:15,638 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 03:39:22,806 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a beautiful cat lady, highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, 
+2024-12-29 03:41:41,057 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/5ebc65d90fe2463d8b2a67ded7580dda.png
+2024-12-29 03:41:41,137 INFO 127.0.0.1 - - [29/Dec/2024 03:41:41] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:42:27,142 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a large horrifying titan creature covered in glowing flora and fauna, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:43:24,948 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/f76c23c57fcd4b328276a966e9a1f821.png
+2024-12-29 03:43:24,949 INFO 127.0.0.1 - - [29/Dec/2024 03:43:24] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:44:08,272 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, dantes inferno, traveling through the 7th circle of hell, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:45:05,650 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/90fd4aec287e4fb0a69d2e645d8f9d5c.png
+2024-12-29 03:45:05,651 INFO 127.0.0.1 - - [29/Dec/2024 03:45:05] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:45:43,921 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a demon lord titan looking down on dead bodies, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:46:41,314 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/1b708d1397b64dd5a3a7ce285745148e.png
+2024-12-29 03:46:41,315 INFO 127.0.0.1 - - [29/Dec/2024 03:46:41] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:47:08,226 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a zombie eating a corpse, super bloody, super gorey, intestines, blood, gore, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:48:06,864 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3b96961681224079ac65ef55328404e6.png
+2024-12-29 03:48:06,865 INFO 127.0.0.1 - - [29/Dec/2024 03:48:06] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:48:31,171 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a man being torn in half, super gorey, super blood, blood, gore, intestines, organs, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:49:29,471 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/680f3e01e4b142008f8cb49b16c4c0b2.png
+2024-12-29 03:49:29,472 INFO 127.0.0.1 - - [29/Dec/2024 03:49:29] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:49:49,102 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, Futuristic and colorful illustration of a cybergoth female demon, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:50:47,903 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/fe05840b914541bfb6395884e4008020.png
+2024-12-29 03:50:47,904 INFO 127.0.0.1 - - [29/Dec/2024 03:50:47] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:50:59,347 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a sexy hentai girl with large breasts, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:51:58,399 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/27d41e9139f7483cb77fb58a06c3e0d6.png
+2024-12-29 03:51:58,400 INFO 127.0.0.1 - - [29/Dec/2024 03:51:58] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:52:26,909 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a fishermans wife being fucked by a giant octopus, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:53:25,818 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/8f52cf539f84431ab83cc151901389a6.png
+2024-12-29 03:53:25,818 INFO 127.0.0.1 - - [29/Dec/2024 03:53:25] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:54:09,929 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, alien girl with tits everywhere, tits for eyes, tits for hair, tits for a body, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:55:07,562 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3e6a571d21a64a9ea6c24f72461cf80a.png
+2024-12-29 03:55:07,563 INFO 127.0.0.1 - - [29/Dec/2024 03:55:07] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:55:39,210 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, Medusa with penises for hair, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 03:56:37,081 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/45ed49a94f8343a5838558d7fe918848.png
+2024-12-29 03:56:37,082 INFO 127.0.0.1 - - [29/Dec/2024 03:56:37] "POST /generate HTTP/1.1" 200 -
+2024-12-29 03:57:49,713 INFO Loading the model...
+2024-12-29 03:58:08,391 INFO Xformers memory-efficient attention enabled.
+2024-12-29 03:58:08,391 INFO Model loaded successfully on cuda.
+2024-12-29 03:58:08,460 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 03:58:08,461 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 03:58:45,887 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a fishermans wife being fucked by a giant octopus, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:00:56,971 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/6d5629f7c72d47a397e729d02594753b.png
+2024-12-29 04:00:57,170 INFO 127.0.0.1 - - [29/Dec/2024 04:00:57] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:01:31,278 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a zombie eating a corpse, super bloody, super gorey, intestines, blood, gore, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:02:28,159 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/fc4e3d95d3454005ba61abfa99ce762e.png
+2024-12-29 04:02:28,160 INFO 127.0.0.1 - - [29/Dec/2024 04:02:28] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:03:02,609 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a man being torn in half, super gorey, super blood, blood, gore, intestines, organs, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:04:01,241 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/20d1f7c139a04280828431fab36e0603.png
+2024-12-29 04:04:01,242 INFO 127.0.0.1 - - [29/Dec/2024 04:04:01] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:04:40,947 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, Futuristic and colorful illustration of a cybergoth female demon, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:05:39,101 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/0a4573eeeba24eebae1e0125de2bab69.png
+2024-12-29 04:05:39,102 INFO 127.0.0.1 - - [29/Dec/2024 04:05:39] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:06:35,739 INFO Loading the model...
+2024-12-29 04:06:52,650 INFO Xformers memory-efficient attention enabled.
+2024-12-29 04:06:52,650 INFO Model loaded successfully on cuda.
+2024-12-29 04:06:52,758 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 04:06:52,758 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 04:07:26,250 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a fishermans wife being fucked by a giant octopus, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:09:32,414 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/a4fb6f4c808740b4a3a4b9e45745c70b.png
+2024-12-29 04:09:32,419 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a zombie eating a corpse, super bloody, super gorey, intestines, blood, gore, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:09:32,419 INFO 127.0.0.1 - - [29/Dec/2024 04:09:32] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:10:30,107 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3659caebb1724a59b8be69278f8d2037.png
+2024-12-29 04:10:30,107 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a man being torn in half, super gorey, super blood, blood, gore, intestines, organs, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:10:30,108 INFO 127.0.0.1 - - [29/Dec/2024 04:10:30] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:11:28,231 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/7db429e8d3ce44fe9bcd1b6dd0a528e1.png
+2024-12-29 04:11:28,232 INFO 127.0.0.1 - - [29/Dec/2024 04:11:28] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:12:15,988 INFO Generating image with prompt: highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, a titan barbarian wielding a bastard sword covered in blood and guts, highly detailed, realistic, fine fabric detail, absurdres, highly-detailed, best quality, masterpiece,very aesthetic, portrait, 
+2024-12-29 04:13:39,749 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/8e70539c39c54ef6826477718bdce3d8.png
+2024-12-29 04:13:39,750 INFO 127.0.0.1 - - [29/Dec/2024 04:13:39] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:14:22,731 INFO Loading the model...
+2024-12-29 04:14:39,119 INFO Xformers memory-efficient attention enabled.
+2024-12-29 04:14:39,120 INFO Model loaded successfully on cuda.
+2024-12-29 04:14:39,174 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 04:14:39,174 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 04:15:00,910 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, Futuristic and colorful illustration of a cybergoth female demon, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:16:54,324 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/34d35a08d1854b18b5fb58b9e8cc2e96.png
+2024-12-29 04:16:54,457 INFO 127.0.0.1 - - [29/Dec/2024 04:16:54] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:17:13,778 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a zombie eating a corpse, super bloody, super gorey, intestines, blood, gore, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:18:10,907 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/2e789954afa0476a89959b5a85a57ce3.png
+2024-12-29 04:18:10,907 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a man being torn in half, super gorey, super blood, blood, gore, intestines, organs, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:18:10,908 INFO 127.0.0.1 - - [29/Dec/2024 04:18:10] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:19:09,939 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b6f59bc63dbd4cbaa3bab71ecc61ec1c.png
+2024-12-29 04:19:09,940 INFO 127.0.0.1 - - [29/Dec/2024 04:19:09] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:20:38,022 INFO Loading the model...
+2024-12-29 04:20:55,237 INFO Xformers memory-efficient attention enabled.
+2024-12-29 04:20:55,237 INFO Model loaded successfully on cuda.
+2024-12-29 04:20:55,325 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 04:20:55,325 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 04:21:09,299 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, Futuristic and colorful illustration of a cybergoth female demon, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:23:36,046 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/f926dce0ee514c44beedb1418d2e46a7.png
+2024-12-29 04:23:36,184 INFO 127.0.0.1 - - [29/Dec/2024 04:23:36] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:23:53,364 INFO Generating image with prompt: highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a zombie eating a corpse, super bloody, super gorey, intestines, blood, gore, highly detailed, realistic, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, 
+2024-12-29 04:24:50,321 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/cadd8f7b5f4543af926de5cec30a4744.png
+2024-12-29 04:24:50,322 INFO 127.0.0.1 - - [29/Dec/2024 04:24:50] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:29:53,071 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, Futuristic and colorful illustration of a cybergoth female demon
+2024-12-29 04:30:51,882 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/5d38f46a6bfa43859c0129f64f118432.png
+2024-12-29 04:30:51,882 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a zombie eating a corpse, super bloody, super gorey, intestines, blood, gore
+2024-12-29 04:30:51,883 INFO 127.0.0.1 - - [29/Dec/2024 04:30:51] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:31:50,857 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/4c89558ad63b4fb5b7efbf35e147c907.png
+2024-12-29 04:31:50,857 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a seraphim angel from the bible enshrouded in divine light
+2024-12-29 04:31:50,858 INFO 127.0.0.1 - - [29/Dec/2024 04:31:50] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:32:47,014 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/6ce4bcc321e7434c9f7a9d850ea96f76.png
+2024-12-29 04:32:47,014 INFO 127.0.0.1 - - [29/Dec/2024 04:32:47] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:32:51,871 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a demon lord torturing his subjects in hell, gore, fire and flame, bible accurate
+2024-12-29 04:33:50,745 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/412b8d6bcb86422292b85d7f6aca76ea.png
+2024-12-29 04:33:50,746 INFO 127.0.0.1 - - [29/Dec/2024 04:33:50] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:35:11,578 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a painting of a path lined with rotting corpses on pikes in the style of Paul Cezanne
+2024-12-29 04:36:08,129 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/8550d6f65bb74f4da0e4cc691ff9bf3d.png
+2024-12-29 04:36:08,130 INFO 127.0.0.1 - - [29/Dec/2024 04:36:08] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:36:58,937 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, a colorful alien planet filled with neon glowing flora and fauna, darkshot, night time
+2024-12-29 04:37:55,115 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/24f2d813eff34bf0ae4993faf4cada0e.png
+2024-12-29 04:37:55,115 INFO 127.0.0.1 - - [29/Dec/2024 04:37:55] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:38:55,260 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a woman wearing a red and green stripped shirt and a purple crown tophat
+2024-12-29 04:39:51,230 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/ef1cd8693ac5411f8301d7cb1ebff533.png
+2024-12-29 04:39:51,231 INFO 127.0.0.1 - - [29/Dec/2024 04:39:51] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:40:53,372 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a red cat plushi the size of a teddy bear with red tenticles for legs
+2024-12-29 04:41:49,026 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/f475c0f53ded422ba981fe1e60499e69.png
+2024-12-29 04:41:49,027 INFO 127.0.0.1 - - [29/Dec/2024 04:41:49] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:42:17,720 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a red cat wearing a robe with red tenticles for legs
+2024-12-29 04:43:14,128 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/abe8a14e37ee4ef1ab5d1f3a69c55526.png
+2024-12-29 04:43:14,129 INFO 127.0.0.1 - - [29/Dec/2024 04:43:14] "POST /generate HTTP/1.1" 200 -
+2024-12-29 04:43:16,118 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, an ugly bald man with a left red eye and right a blue eye
+2024-12-29 04:44:11,122 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/7dca014633e44f54b9d92f31d2acbcff.png
+2024-12-29 04:44:11,123 INFO 127.0.0.1 - - [29/Dec/2024 04:44:11] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:20:55,980 INFO Loading the model...
+2024-12-29 06:21:41,002 INFO Loading the model...
+2024-12-29 06:22:35,638 INFO Loading the model...
+2024-12-29 06:22:47,621 INFO Xformers memory-efficient attention enabled.
+2024-12-29 06:22:47,622 INFO Model loaded successfully on cuda.
+2024-12-29 06:22:47,689 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 06:22:47,689 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 06:23:33,645 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a hacker with a hoodie, pixel, pixel_art, pixel art
+2024-12-29 06:26:25,088 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/5f500edb5e204723bae727ad45569caa.png
+2024-12-29 06:26:25,174 INFO 127.0.0.1 - - [29/Dec/2024 06:26:25] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:27:06,483 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a hacker with a hoodie, pixel art
+2024-12-29 06:28:47,709 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3b345f00f3af4a5eb92b2b83691dd7bd.png
+2024-12-29 06:28:47,709 INFO 127.0.0.1 - - [29/Dec/2024 06:28:47] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:35:18,849 INFO Generating image with prompt: pixel art, a hacker with a hoodie
+2024-12-29 06:37:04,397 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/4f513a1066224fad8c95944cc85215d6.png
+2024-12-29 06:37:04,398 INFO 127.0.0.1 - - [29/Dec/2024 06:37:04] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:37:33,765 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a hacker with a hoodie
+2024-12-29 06:39:18,732 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/cc42947641734b578259136f4c46bdac.png
+2024-12-29 06:39:18,733 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a hacker with a hoodie
+2024-12-29 06:39:18,735 INFO 127.0.0.1 - - [29/Dec/2024 06:39:18] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:40:36,662 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/1c602a30315c4162b4931642e6e4cf6e.png
+2024-12-29 06:40:36,662 INFO Generating image with prompt: a hacker with a hoodie
+2024-12-29 06:40:36,665 INFO 127.0.0.1 - - [29/Dec/2024 06:40:36] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:42:15,784 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/a460ce3d7e674f359115effe411bc32f.png
+2024-12-29 06:42:15,784 INFO Generating image with prompt: highly detailed, absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, a hacker with a hoodie
+2024-12-29 06:42:15,785 INFO 127.0.0.1 - - [29/Dec/2024 06:42:15] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:43:31,155 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/bcfa86e1572f40739676f58d81f9a85b.png
+2024-12-29 06:43:31,156 INFO 127.0.0.1 - - [29/Dec/2024 06:43:31] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:44:16,470 INFO Generating image with prompt: Futuristic and colorful illustration of a cybergoth female demon
+2024-12-29 06:46:01,295 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/3fc88c3074b34a5db04d1c3d8083f4e2.png
+2024-12-29 06:46:01,295 INFO 127.0.0.1 - - [29/Dec/2024 06:46:01] "POST /generate HTTP/1.1" 200 -
+2024-12-29 06:46:36,458 INFO Generating image with prompt: pixel art, Futuristic and colorful illustration of a cybergoth female demon
+2024-12-29 06:48:17,355 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/5d74c4d25286490e94a71c5da0c7f7e2.png
+2024-12-29 06:48:17,355 INFO 127.0.0.1 - - [29/Dec/2024 06:48:17] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:22:58,184 INFO Generating image with prompt:  a large fearsome dragon
+2024-12-29 07:24:54,219 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/64cbebec377c4c849e69c00eb5d05d93.png
+2024-12-29 07:24:54,219 INFO 127.0.0.1 - - [29/Dec/2024 07:24:54] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:27:16,532 INFO Generating image with prompt:  psychidelic trippy colorful explosion human skull, highly detailed, beautiful, masterpiece, cinematic, darkshot
+2024-12-29 07:29:12,118 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b0735af4d4314da981808a5421cbf425.png
+2024-12-29 07:29:12,119 INFO 127.0.0.1 - - [29/Dec/2024 07:29:12] "POST /generate HTTP/1.1" 200 -

@@ -52,7 +52,7 @@ namespace DiscordMusicBot.Services.Services
             var guild = _client?.GetGuild(guildId);
 
             // - Clear all server slash commands ---
-            //await SlashCommandClear(guild); 
+            // await SlashCommandClear(guild); 
             // -------------------------------------------------
 
             if (guild != null) await Service.Get<IServiceCommandManager>().RegisterAllCommands(guild);

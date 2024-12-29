@@ -3,7 +3,10 @@ import uuid
 import torch
 from flask import Flask, request, jsonify, send_from_directory, url_for
 from PIL import Image
-from diffusers import StableDiffusionPipeline
+from diffusers import StableDiffusionPipeline, AutoPipelineForText2Image, StableDiffusionXLPipeline, StableDiffusion3Pipeline, FluxPipeline
+from diffusers import EulerDiscreteScheduler, EulerAncestralDiscreteScheduler
+from diffusers import DPMSolverMultistepScheduler, AutoencoderKL
+from peft import PeftModel  # Import PeftModel
 from colorama import Fore, Style, init
 import threading
 import queue
@@ -34,8 +37,14 @@ app.config['IMAGE_SAVE_DIRECTORY'] = os.path.join(app_root, 'generated_images')
 os.makedirs(app.config['IMAGE_SAVE_DIRECTORY'], exist_ok=True)
 
 # Specify the model path
-local_model_path = './models/sd/2dnSD15_2.safetensors'
+# local_model_path = './models/sd/2dnSD15_2.safetensors'
+# local_model_path = './models/sdxldistilled/stableDiffusion3SD3_sd3Medium.safetensors'
 # local_model_path = './models/sdxl1/noobaiXLNAIXL_vPred10Version.safetensors'
+# local_model_path = './models/illustrious/waiNSFWIllustrious_v80.safetensors' #meh
+# local_model_path = './models/illustrious/ntrMIXIllustriousXL_xiii.safetensors' #great!
+# local_model_path = './models/illustrious/prefectiousXLNSFW_v10.safetensors' #good
+# local_model_path = './models/pony/realismByStableYogi_ponyV3VAE.safetensors' # decent but only for realism
+local_model_path = './models/pony/waiANINSFWPONYXL_v12.safetensors' #very cool!
 
 # Check if the model file exists
 if not os.path.exists(local_model_path):
@@ -48,18 +57,62 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Load the model once
 logging.info("Loading the model...")
-pipe = StableDiffusionPipeline.from_single_file(
+pipe = StableDiffusionXLPipeline.from_single_file(
     local_model_path, 
     torch_dtype=torch.float16, 
     variant="fp16"
 )
-pipe = pipe.to(device)
+
+# Load and setup Loras
+# local_lora_path = './lora/add-detail-xl.safetensors'
+# pipe.unet = PeftModel.from_pretrained(pipe.unet, local_lora_path)
+
+pipe.load_lora_weights("nerijs/pixel-art-xl", weight_name="pixel-art-xl.safetensors", adapter_name="pixel")
+pipe.set_adapters("pixel")
+
+# Load and setup custom VAE
+custom_vae_path = './vae/sdxlVAE_sdxlVAE.safetensors'  # Ensure this path points to the directory containing the VAE files
+
+# Load the custom VAE
+custom_vae = AutoencoderKL.from_single_file(
+    custom_vae_path,
+    torch_dtype=torch.float16
+).to(device)
+
+# Assign the custom VAE to the pipeline
+pipe.vae = custom_vae
+
+#<lora:add-detail-xl:1> <lyco:add-detail-xl:1>
+
+# USE THIS WITH 
+# - noobaiXLNAIXL_vPred10Version (XL)
+#scheduler_args = {"prediction_type": "v_prediction", "rescale_betas_zero_snr": True}
+#pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config, **scheduler_args)
+
+#EULAR A Scheduler
+# scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.config)
+scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
+pipe.scheduler = scheduler
+
+pipe.enable_xformers_memory_efficient_attention()
+
+# pipe = pipe.to(device)
+pipe.enable_model_cpu_offload()
+pipe.enable_sequential_cpu_offload()
 
 # Enable memory optimizations
 pipe.enable_attention_slicing()
 pipe.enable_vae_slicing()
-pipe.enable_sequential_cpu_offload()
 pipe.enable_vae_tiling()
+
+# pipe.unet = torch.compile(pipe.unet, mode="reduce-overhead", fullgraph=True)
+
+#Enabled xformers memory efficient attention
+try:
+    pipe.enable_xformers_memory_efficient_attention()
+    logging.info("Xformers memory-efficient attention enabled.")
+except Exception as e:
+    logging.warning(f"Could not enable Xformers memory-efficient attention: {e}")
 
 logging.info(f"Model loaded successfully on {device}.")
 
@@ -83,6 +136,7 @@ def worker():
         if job is None:
             break  # Exit signal
         try:
+            lora_scale = 0.9
             logging.info(f"Generating image with prompt: {job.prompt}")
             result = pipe(
                 prompt=job.prompt,
@@ -90,7 +144,8 @@ def worker():
                 num_inference_steps=job.num_inference_steps,
                 generator=job.generator,
                 width=job.width,
-                height=job.height
+                height=job.height,
+                cross_attention_kwargs={"scale": lora_scale},
             )
             image = result.images[0]
 
