@@ -16,4 +16,14 @@ models--sd-legacy--stable-diffusion-v1-5/
 models/
 diffuserextractor/
 generated_images/
+lora/
+vae/
 
+AIDiscordBot/config.json
+AIDiscordBot/analytics.json
+
+config.json
+analytics.json
+
+AIDiscordBot/bin
+AIDiscordBot/obj

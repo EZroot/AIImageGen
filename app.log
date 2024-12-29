@@ -403,3 +403,18 @@
 2024-12-29 07:44:37,241 INFO Generating image with prompt: absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a large grey humanoid robot with a reinforced chasis with ruins etched in to its plate
 2024-12-29 07:45:55,864 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/90aa6acd24e14c648b4ee67f447e87e1.png
 2024-12-29 07:45:55,864 INFO 127.0.0.1 - - [29/Dec/2024 07:45:55] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:52:15,690 INFO Loading the model...
+2024-12-29 07:52:20,505 INFO Xformers memory-efficient attention enabled.
+2024-12-29 07:52:20,506 INFO Model loaded successfully on cuda.
+2024-12-29 07:52:20,512 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 07:52:20,512 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 07:53:35,560 INFO Generating image with prompt: absurdres, highly-detailed, best quality, masterpiece, very aesthetic, a dog
+2024-12-29 07:54:57,524 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/0b8a6cce32d44fbcb8e5c893aef64a7a.png
+2024-12-29 07:54:57,524 INFO Generating image with prompt: pixel art, A logo of an AI face with neuro networks
+2024-12-29 07:54:57,527 INFO 127.0.0.1 - - [29/Dec/2024 07:54:57] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:56:18,869 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/a1af7b0382f74f32b0e0f9f55edde828.png
+2024-12-29 07:56:18,870 INFO Generating image with prompt:  a dog
+2024-12-29 07:56:18,872 INFO 127.0.0.1 - - [29/Dec/2024 07:56:18] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:57:41,575 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/e1b7fdb7793d4e33adc45f05a5a36ae9.png
+2024-12-29 07:57:41,575 INFO 127.0.0.1 - - [29/Dec/2024 07:57:41] "POST /generate HTTP/1.1" 200 -
