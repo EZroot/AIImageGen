@@ -391,3 +391,15 @@
 2024-12-29 07:27:16,532 INFO Generating image with prompt:  psychidelic trippy colorful explosion human skull, highly detailed, beautiful, masterpiece, cinematic, darkshot
 2024-12-29 07:29:12,118 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/b0735af4d4314da981808a5421cbf425.png
 2024-12-29 07:29:12,119 INFO 127.0.0.1 - - [29/Dec/2024 07:29:12] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:38:52,603 INFO Loading the model...
+2024-12-29 07:39:00,219 INFO Xformers memory-efficient attention enabled.
+2024-12-29 07:39:00,220 INFO Model loaded successfully on cuda.
+2024-12-29 07:39:00,254 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-29 07:39:00,254 INFO [33mPress CTRL+C to quit[0m
+2024-12-29 07:39:41,905 INFO Generating image with prompt: absurdres, highly-detailed, best quality, masterpiece, very aesthetic, A giant dragon lurking through a thick elven forrest
+2024-12-29 07:42:10,348 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/c6d42da2bb3b40c88116ff1422d7321f.png
+2024-12-29 07:42:10,350 INFO 127.0.0.1 - - [29/Dec/2024 07:42:10] "POST /generate HTTP/1.1" 200 -
+2024-12-29 07:44:37,241 INFO Generating image with prompt: absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, a large grey humanoid robot with a reinforced chasis with ruins etched in to its plate
+2024-12-29 07:45:55,864 INFO Image saved at: /home/anon/Repos/AIImageGen/generated_images/90aa6acd24e14c648b4ee67f447e87e1.png
+2024-12-29 07:45:55,864 INFO 127.0.0.1 - - [29/Dec/2024 07:45:55] "POST /generate HTTP/1.1" 200 -

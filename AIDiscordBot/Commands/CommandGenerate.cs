@@ -23,28 +23,20 @@ namespace DiscordMusicBot.Commands.Commands
                     .WithType(ApplicationCommandOptionType.String)
                     .WithRequired(true))
                 .AddOption(new SlashCommandOptionBuilder()
-                    .WithName("width")
-                    .WithDescription("Choose the width of the resolution.")
+                    .WithName("resolution")
+                    .WithDescription("Choose the resolution.")
                     .WithType(ApplicationCommandOptionType.String) // Changed from Integer to String
-                    .AddChoice("768", "768")                      // Both name and value are strings
-                    .AddChoice("1024", "1024")
-                    .AddChoice("1280", "1280")
-                    .AddChoice("1440", "1440")
-                    .WithRequired(true))
-                .AddOption(new SlashCommandOptionBuilder()
-                    .WithName("height")
-                    .WithDescription("Choose the height of the resolution.")
-                    .WithType(ApplicationCommandOptionType.String) // Changed from Integer to String
-                    .AddChoice("768", "768")                      // Both name and value are strings
-                    .AddChoice("1024", "1024")
-                    .AddChoice("1280", "1280")
-                    .AddChoice("1440", "1440")
+                    .AddChoice("Default (~30 sec)", "1024x1024")                      // Both name and value are strings
+                    .AddChoice("Landscape (~1min)", "1280x720")
+                    .AddChoice("Portrait (~1min)", "720x1280")
+                    .AddChoice("Desktop Background (~3min)", "1920x1080")
                     .WithRequired(true))
                 .AddOption(new SlashCommandOptionBuilder()
                     .WithName("helper_prompt")
                     .WithDescription("Helps with adding details to the image.")
                     .WithType(ApplicationCommandOptionType.String)
                     .AddChoice("Pixel art", "pixel art, ")
+                    .AddChoice("More Detail", "absurdres, highly-detailed, best quality, masterpiece, very aesthetic, ")
                     .AddChoice("Character Portrait mode", "absurdres, highly-detailed, best quality, masterpiece, very aesthetic, portrait, ")
                     .AddChoice("Landscape Wideshot mode", "absurdres, highly-detailed, best quality, masterpiece, very aesthetic, landscape, wide-shot, ")
                     .AddChoice("Raw (no help)", " ")
@@ -65,34 +57,14 @@ namespace DiscordMusicBot.Commands.Commands
 
             // Retrieve each option by name
             var promptOption = command.Data.Options.FirstOrDefault(option => option.Name == "prompt")?.Value as string;
-            var widthOption = command.Data.Options.FirstOrDefault(option => option.Name == "width")?.Value as string;
-            var heightOption = command.Data.Options.FirstOrDefault(option => option.Name == "height")?.Value as string;
+            var resolutionOption = command.Data.Options.FirstOrDefault(option => option.Name == "resolution")?.Value as string;
             var helperPromptOption = command.Data.Options.FirstOrDefault(option => option.Name == "helper_prompt")?.Value as string;
             var negativePromptOption = command.Data.Options.FirstOrDefault(option => option.Name == "negative_prompt")?.Value as string;
 
-            // Validate required options
-            if (string.IsNullOrEmpty(promptOption) || string.IsNullOrEmpty(widthOption) || string.IsNullOrEmpty(heightOption) ||
-                string.IsNullOrEmpty(helperPromptOption) || string.IsNullOrEmpty(negativePromptOption))
-            {
-                await command.FollowupAsync("One or more required options are missing.");
-                return;
-            }
-
-            // Parse width and height to integers
-            if (!int.TryParse(widthOption, out int width))
-            {
-                await command.FollowupAsync("Invalid width value.");
-                return;
-            }
-
-            if (!int.TryParse(heightOption, out int height))
-            {
-                await command.FollowupAsync("Invalid height value.");
-                return;
-            }
+            var resolutionParsed = resolutionOption.Split('x');
 
             var response = await Service.Get<IServiceRequestManager>().SendRequestAsync(
-                promptOption, width, height, 30, helperPromptOption);
+                promptOption, int.Parse(resolutionParsed[0]), int.Parse(resolutionParsed[1]), 30, helperPromptOption, negativePromptOption);
 
             if (!string.IsNullOrEmpty(response))
             {
