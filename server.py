@@ -44,7 +44,8 @@ os.makedirs(app.config['IMAGE_SAVE_DIRECTORY'], exist_ok=True)
 # local_model_path = './models/illustrious/ntrMIXIllustriousXL_xiii.safetensors' #great!
 # local_model_path = './models/illustrious/prefectiousXLNSFW_v10.safetensors' #good
 # local_model_path = './models/pony/realismByStableYogi_ponyV3VAE.safetensors' # decent but only for realism
-local_model_path = './models/pony/waiANINSFWPONYXL_v12.safetensors' #very cool!
+# local_model_path = './models/pony/waiANINSFWPONYXL_v12.safetensors' #very cool!
+local_model_path = './models/illustrious/waiNSFWIllustrious_v110.safetensors' #very cool!
 
 # Check if the model file exists
 if not os.path.exists(local_model_path):
@@ -67,20 +68,20 @@ pipe = StableDiffusionXLPipeline.from_single_file(
 # local_lora_path = './lora/add-detail-xl.safetensors'
 # pipe.unet = PeftModel.from_pretrained(pipe.unet, local_lora_path)
 
-pipe.load_lora_weights("nerijs/pixel-art-xl", weight_name="pixel-art-xl.safetensors", adapter_name="pixel")
-pipe.set_adapters("pixel")
+# pipe.load_lora_weights("nerijs/pixel-art-xl", weight_name="pixel-art-xl.safetensors", adapter_name="pixel")
+# pipe.set_adapters("pixel")
 
 # Load and setup custom VAE
-custom_vae_path = './vae/sdxlVAE_sdxlVAE.safetensors'  # Ensure this path points to the directory containing the VAE files
+# custom_vae_path = './vae/sdxlVAE_sdxlVAE.safetensors'  # Ensure this path points to the directory containing the VAE files
 
-# Load the custom VAE
-custom_vae = AutoencoderKL.from_single_file(
-    custom_vae_path,
-    torch_dtype=torch.float16
-).to(device)
+# # Load the custom VAE
+# custom_vae = AutoencoderKL.from_single_file(
+#     custom_vae_path,
+#     torch_dtype=torch.float16
+# ).to(device)
 
-# Assign the custom VAE to the pipeline
-pipe.vae = custom_vae
+# # Assign the custom VAE to the pipeline
+# pipe.vae = custom_vae
 
 #<lora:add-detail-xl:1> <lyco:add-detail-xl:1>
 
@@ -90,8 +91,8 @@ pipe.vae = custom_vae
 #pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config, **scheduler_args)
 
 #EULAR A Scheduler
-# scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.config)
-scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
+scheduler = EulerAncestralDiscreteScheduler.from_config(pipe.scheduler.config)
+# scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 pipe.scheduler = scheduler
 
 pipe.enable_xformers_memory_efficient_attention()
@@ -137,15 +138,17 @@ def worker():
             break  # Exit signal
         try:
             lora_scale = 0.9
+            guidance_scale = 6
             logging.info(f"Generating image with prompt: {job.prompt}")
             result = pipe(
                 prompt=job.prompt,
                 negative_prompt=job.negative_prompt,
                 num_inference_steps=job.num_inference_steps,
                 generator=job.generator,
+                guidance_scale=guidance_scale,
                 width=job.width,
                 height=job.height,
-                cross_attention_kwargs={"scale": lora_scale},
+                # cross_attention_kwargs={"scale": lora_scale},
             )
             image = result.images[0]
 
