@@ -16,6 +16,8 @@ models--sd-legacy--stable-diffusion-v1-5/
 models/
 diffuserextractor/
 generated_images/
+generated_videos/
+generated_gifs/
 lora/
 vae/
 
