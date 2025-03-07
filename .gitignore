@@ -21,6 +21,11 @@ generated_gifs/
 lora/
 vae/
 
+/AIDiscordBot/config.json
+app.log
+flux_app.log
+flux-dev.png
+
 AIDiscordBot/config.json
 AIDiscordBot/analytics.json
 
