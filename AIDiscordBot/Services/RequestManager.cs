@@ -19,7 +19,7 @@ namespace DiscordMusicBot.Services.Services
         {
             _client = new HttpClient
             {
-                Timeout = TimeSpan.FromMinutes(5) // Set to desired timeout duration
+                Timeout = TimeSpan.FromMinutes(10) // Set to desired timeout duration
             };
             
             _serverBaseUrl = "http://127.0.0.1:5000"; // Update if different

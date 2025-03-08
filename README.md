@@ -25,3 +25,9 @@ huggingface_hub
 
 
 Run the AIDiscordBot using dotnet and fill out the config.json file it generates on first run to have a interface from discord to your image generation python server
+
+------------------------
+
+Flux is large, but one of the more accurate image gen models
+animdiff is fast, but shitty results (I also need to try SDXL version)
+img2vid is SDXL + LTVideo which is super slow but pretty good results (hour or so for a small vid)
